@@ -216,7 +216,7 @@ let Home = () => {
       };
 
       ctx.canvas.toBlob(function(blob) {
-        link.setAttribute('download', 'sliptrace.png');
+        link.setAttribute('download', 'moire.png');
         link.setAttribute('href', URL.createObjectURL(blob));
         link.addEventListener('click', revokeURL);
         link.dispatchEvent(
@@ -294,7 +294,7 @@ let Home = () => {
   return (
     <div>
       <Head>
-        <title>Sliptrace</title>
+        <title>Moire</title>
       </Head>
       <style jsx global>{`
         @font-face {
@@ -355,7 +355,7 @@ let Home = () => {
           }}
         >
           <div style={{ marginBottom: '0.75rem', maxWidth: '60ch' }}>
-            Sliptrace lets you generate angular skyscapes using{' '}
+            Moire lets you generate angular skyscapes using{' '}
             <a
               href="https://en.wikipedia.org/wiki/Asteroids_(video_game)"
               target="_blank"
@@ -370,9 +370,17 @@ let Home = () => {
             ↩&nbsp;
           </div>
           <div style={{ marginBottom: '0.75rem' }}>Special</div>
-          <div>
+          <div style={{ marginBottom: '1.5rem' }}>
             {KeyTip(' ')} pause&nbsp; {KeyTip('j')} save as png&nbsp;{' '}
             {KeyTip('l')} clear&nbsp; {KeyTip('?')} help
+          </div>
+          <div>
+            <a
+              href="https://github.com/constraint-systems/moire"
+              target="_blank"
+            >
+              View source↗
+            </a>
           </div>
         </div>
       </div>

@@ -18,18 +18,18 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <meta
             name="description"
-            content="A keyboard-driven, grid-based drawing tool."
+            content="Generate angular skyscapes using Asteroids-like ship controls"
           />
-          <meta property="og:title" content="Hex" />
+          <meta property="og:title" content="Moire" />
           <meta
             property="og:description"
-            content="A keyboard-driven, grid-based drawing tool."
+            content="Generate angular skyscapes using Asteroids-like ship controls"
           />
           <meta
             property="og:image"
-            content="https://hex.constraint.systems/static/share.png"
+            content="https://moire.constraint.systems/static/share.png"
           />
-          <meta property="og:url" content="https://hex.constraint.systems" />
+          <meta property="og:url" content="https://moire.constraint.systems" />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <body>
