@@ -27,7 +27,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://moire.constraint.systems/static/share.png"
+            content="https://moire.constraint.systems/static/moire-share.png"
           />
           <meta property="og:url" content="https://moire.constraint.systems" />
           <meta name="twitter:card" content="summary_large_image" />
