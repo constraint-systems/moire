@@ -25,7 +25,9 @@ let Home = () => {
         onClick={() => {
           keymap.current[letter] = true;
           keyAction(letter, false);
-          keymap.current[letter] = false;
+          setTimeout(() => {
+            keymap.current[letter] = false;
+          }, 300);
         }}
         style={{
           outline: 'solid 1px black',
@@ -69,10 +71,10 @@ let Home = () => {
     let rad = ac * (Math.PI / 180);
 
     function pmove(x, y) {
-      ctx.moveTo(x + sp[0], y + sp[1]);
+      ctx.moveTo(Math.round(x + sp[0]), Math.round(y + sp[1]));
     }
     function pline(x, y) {
-      ctx.lineTo(x + sp[0], y + sp[1]);
+      ctx.lineTo(Math.round(x + sp[0]), Math.round(y + sp[1]));
     }
     function spmove(x, y) {
       stx.moveTo(x + sp[0], y + sp[1]);
@@ -258,6 +260,8 @@ let Home = () => {
     let c = canvasRef.current;
     let s = shipRef.current;
 
+    ship_position.current = [80, dimensions[1] / 2];
+
     c.width = dimensions[0] * dpr;
     c.height = dimensions[1] * dpr;
     c.style.width = dimensions[0] + 'px';
@@ -348,7 +352,7 @@ let Home = () => {
             background: 'rgba(255,255,255,0.8)',
             paddingLeft: '2ch',
             paddingRight: '2ch',
-            paddingBottom: '1.5rem',
+            paddingBottom: '0.75rem',
             paddingTop: '0.75rem',
             right: '1.5rem',
             bottom: '1.5rem',
