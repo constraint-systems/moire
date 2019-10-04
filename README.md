@@ -6,4 +6,4 @@ Moire lets you generate angular skyscapes using Asteroids-like ship controls.
 
 https://moire.constraint.systems/
 
-Inspired by [Asteroids](https://github.com/hundredrabbits/noodle) and [Bruno Munari's Xerographies](https://www.google.com/search?q=bruno+mari+xerography&safe=active&tbm=isch) as described in [A New Program for Graphic Design](http://www.inventorypress.com/product/a-new-program-for-graphic-design).
+Inspired by the [Asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)) arcade game and [Bruno Munari's Xerographies](https://www.google.com/search?q=bruno+mari+xerography&safe=active&tbm=isch). I learned about the Xerographies in [A New Program for Graphic Design](http://www.inventorypress.com/product/a-new-program-for-graphic-design).
